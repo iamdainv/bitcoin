@@ -1,10 +1,13 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const NavItem = (props) => {
-    return (
-        <li className="list-item"> {props.children} </li>
-    );
+  return (
+    <Link to="/users" className="list-item">
+      {props.children}
+    </Link>
+  );
 };
 
 export default NavItem;
